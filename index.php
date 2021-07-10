@@ -26,6 +26,7 @@
         </div>
     </form>
 </div>
+
 <div class="bg-blanco contenedor sombra contactos">
     <div class="contenedor-contactos">
         <h2>Contactos</h2>
