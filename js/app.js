@@ -16,8 +16,8 @@ function leerFormulario(e) {
          telefono = document.querySelector('#telefono').value;
 
     if (nombre === '' || empresa === '' || telefono === '') {
-        alert('Los campos estan vacios');
+
     }else{
-        alert('Los no campos estan vacios');
+        
     }
 }
