@@ -7,23 +7,7 @@
 <div class="bg-amarillo contenedor sombra">
     <form id="contacto" action="#">
         <legend>Añada un contacto <span>Todos los campos son obligatorios</span></legend>
-        <div class="campos">
-            <div class="campo">
-                <label for="nombre">Nombre:</label>
-                <input type="text" placeholder="Nombre Contacto" id="nombre">
-            </div> 
-            <div class="campo">
-                <label for="empresa">Empresa:</label>
-                <input type="text" placeholder="Nombre Empresa" id="empresa">
-            </div> 
-            <div class="campo">
-                <label for="telefono">Telefono:</label>
-                <input type="tel" placeholder="Telefono Contacto" id="telefono">
-            </div>      
-        </div>
-        <div class="campo enviar">
-                <input type="submit" value="AÑADIR">
-            </div> 
+        <?php include './inc/layout/formulario.php'; ?>
     </form>
 </div>
 
@@ -48,7 +32,7 @@
                         <td>UTT</td>
                         <td>1234567890</td>
                         <td>
-                            <a href="#" class="btn-editar btn"><i class="fa fa-pencil-square" aria-hidden="true"></i></a>
+                            <a href="editar.php?id=1" class="btn-editar btn"><i class="fa fa-pencil-square" aria-hidden="true"></i></a>
                             <button data-id="1" type="button" class="btn-borrar btn">
                                     <i class="fa fa-trash" aria-hidden="true"></i>
                             </button>
@@ -59,7 +43,7 @@
                         <td>UTT</td>
                         <td>1234567890</td>
                         <td>
-                            <a href="#" class="btn-editar btn"><i class="fa fa-pencil-square" aria-hidden="true"></i></a>
+                            <a href="editar.php?id=1" class="btn-editar btn"><i class="fa fa-pencil-square" aria-hidden="true"></i></a>
                             <button data-id="1" type="button" class="btn-borrar btn">
                                     <i class="fa fa-trash" aria-hidden="true"></i>
                             </button>
@@ -70,7 +54,7 @@
                         <td>UTT</td>
                         <td>1234567890</td>
                         <td>
-                            <a href="#" class="btn-editar btn"><i class="fa fa-pencil-square" aria-hidden="true"></i></a>
+                            <a href="editar.php?id=1" class="btn-editar btn"><i class="fa fa-pencil-square" aria-hidden="true"></i></a>
                             <button data-id="1" type="button" class="btn-borrar btn">
                                     <i class="fa fa-trash" aria-hidden="true"></i>
                             </button>
