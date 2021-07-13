@@ -14,12 +14,26 @@ function leerFormulario(e) {
     const nombre = document.querySelector('#nombre').value,
          empresa = document.querySelector('#empresa').value,
          telefono = document.querySelector('#telefono').value;
+         accion = document.querySelector('#accion').value;
 
     if (nombre === '' || empresa === '' || telefono === '') {
         //2 parametros, texto y clase
         mostrarNotificacion('Todos los campos son obligatorios', 'error');
     }else{
-        
+        //pasa la validacion, crear llama a ajax
+        const infoContacto = new FormData();
+        infoContacto.append('nombre', nombre);
+        infoContacto.append('empresa', empresa);
+        infoContacto.append('telefono', telefono);
+        infoContacto.append('accion', accion);
+
+        console.log(infoContacto);
+
+        if(accion === 'crear'){
+            //crear un nuevo elemento
+        } else {
+            //editar un elememto
+        }
     }
 }
 //Notificacion en pantalla
