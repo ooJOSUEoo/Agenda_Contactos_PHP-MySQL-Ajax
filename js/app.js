@@ -27,12 +27,16 @@ function leerFormulario(e) {
         infoContacto.append('telefono', telefono);
         infoContacto.append('accion', accion);
 
-        console.log(infoContacto);
+        //console.log(...infoContacto);
 
         if(accion === 'crear'){
             //crear un nuevo elemento
+            insertarBD(infoContacto);
         } else {
             //editar un elememto
+            const idRegistro = document.querySelector('#id').value;
+            infoContacto.append('id', idRegistro);
+            actualizarRegistro(infoContacto);
         }
     }
 }
