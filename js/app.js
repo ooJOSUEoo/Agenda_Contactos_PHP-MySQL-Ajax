@@ -31,12 +31,8 @@ function leerFormulario(e) {
 
         if(accion === 'crear'){
             //crear un nuevo elemento
-            insertarBD(infoContacto);
         } else {
             //editar un elememto
-            const idRegistro = document.querySelector('#id').value;
-            infoContacto.append('id', idRegistro);
-            actualizarRegistro(infoContacto);
         }
     }
 }
